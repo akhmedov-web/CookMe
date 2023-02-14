@@ -61,7 +61,7 @@ export default function App() {
             .catch(err => console.log(err))
     }
     function getBySearch() {
-        axios.get(`http://www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`)
+        axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${keyword}`)
             .then(response => setExploreData(response.data.meals))
             .catch(err => console.log(err))
     }
